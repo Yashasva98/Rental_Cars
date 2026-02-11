@@ -1,239 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DriveEase PRO</title>
 
-<!-- Correct CSS Link -->
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<!-- Correct FontAwesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<title>CAR SHOWROOM</title>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar background h-nav-resp">
-<ul class="nav-list v-class-resp">
+<!-- Navbar -->
+<header class="navbar">
+    <h2 class="logo">DriveEase</h2>
 
-<div class="logo">
-<img src="img/img.jpg" alt="logo">
-</div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#cars">Cars</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-<li><a href="#Home">Home</a></li>
-<li><a href="#Featured">Featured</a></li>
-<li><a href="#Review">Review</a></li>
-<li><a href="#Contact">Contact Us</a></li>
-
-</ul>
-
-<div class="rightNav v-class-resp">
-<input type="text" placeholder="Search">
-<button class="btn btn-sm btn-car">Search</button>
-</div>
-
-<div class="burger">
-<div class="line"></div>
-<div class="line"></div>
-<div class="line"></div>
-</div>
-
-</nav>
-
-<!-- HERO SECTION -->
-<section class="background firstSection" id="Home">
-
-<div class="box-main">
-
-<div class="firstHalf">
-<p class="text-big">Find the right Car for you</p>
-
-<p class="text-small">
-You get the most luxury cars in one place. Explore premium features and experience them at affordable prices.
-</p>
-
-<button class="btn">Book Now</button>
-</div>
-
-<div class="secondHalf">
-<img src="img/img.jpg" alt="car">
-</div>
-
-</div>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Rent Your Dream Car Today</h1>
+        <p>Luxury • Comfort • Affordable</p>
+        <a href="#cars" class="btn">Explore Cars</a>
+    </div>
 </section>
 
+<!-- Search -->
+<section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search Cars...">
+</section>
 
-<!-- MERCEDES -->
-<section class="secRight">
+<!-- Cars Section -->
+<section class="cars" id="cars">
 
-<div class="paras">
-<p class="sectionTag text-big">Mercedes-Benz C-Class - 69.48 Lakh</p>
-
-<p class="sectionSubTag text-small">
-Premium features include ambient lighting, LED setup, panoramic sunroof, dual climate control and advanced safety.
-</p>
-
-<button class="btn-car">Buy</button>
-<button class="btn-car">Rent</button>
+<div class="car-card">
+    <img src="https://images.unsplash.com/photo-1549924231-f129b911e442">
+    <h3>BMW X5</h3>
+    <p>₹6000 / day</p>
+    <button onclick="bookCar('BMW X5')">Book Now</button>
 </div>
 
-<div class="thumbnail">
-<img src="img/car-12.jpeg" class="imgFluid">
+<div class="car-card">
+    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+    <h3>Audi A6</h3>
+    <p>₹5500 / day</p>
+    <button onclick="bookCar('Audi A6')">Book Now</button>
+</div>
+
+<div class="car-card">
+    <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2">
+    <h3>Mercedes C-Class</h3>
+    <p>₹6500 / day</p>
+    <button onclick="bookCar('Mercedes C-Class')">Book Now</button>
+</div>
+
+<div class="car-card">
+    <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d">
+    <h3>Toyota Fortuner</h3>
+    <p>₹5000 / day</p>
+    <button onclick="bookCar('Toyota Fortuner')">Book Now</button>
 </div>
 
 </section>
 
-
-<!-- AUDI -->
-<section class="secLeft">
-
-<div class="paras">
-<p class="sectionTag text-big">Audi A8 - 1.57 Crore</p>
-
-<p class="sectionSubTag text-small">
-Luxury sedan with lightweight platform, triple screen dashboard and powerful engine performance.
-</p>
-
-<button class="btn-car">Buy</button>
-<button class="btn-car">Rent</button>
-</div>
-
-<div class="thumbnail">
-<img src="img/car-9.jpg" class="imgFluid">
-</div>
-
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@driveease.com</p>
+    <p>Phone: +91 9876543210</p>
 </section>
 
-
-<!-- BMW -->
-<section class="secRight">
-
-<div class="paras">
-<p class="sectionTag text-big">BMW 7 Series - 1.40 Crore</p>
-
-<p class="sectionSubTag text-small">
-Flagship BMW sedan with hybrid option, laser headlights and superior comfort.
-</p>
-
-<button class="btn-car">Buy</button>
-<button class="btn-car">Rent</button>
-</div>
-
-<div class="thumbnail">
-<img src="img/car-1.jpeg" class="imgFluid">
-</div>
-
-</section>
-
-
-<!-- FEATURED CARS -->
-<section class="Featured" id="Featured">
-
-<h1 class="text-center">Most Expensive Cars</h1>
-
-<div class="row2">
-
-<div class="col2">
-<img src="img/car-5.jpg">
-<h3>Ferrari F8</h3>
-<p>Price - 4 Crore</p>
-<button class="btn-car">Buy</button>
-<button class="btn-car">Rent</button>
-</div>
-
-<div class="col2">
-<img src="img/car-8.jpg">
-<h3>Bugatti Chiron</h3>
-<p>Price - 28 Crore</p>
-<button class="btn-car">Buy</button>
-<button class="btn-car">Rent</button>
-</div>
-
-<div class="col2">
-<img src="img/car-15.jpg">
-<h3>Lamborghini Veneno</h3>
-<p>Price - 45 Crore</p>
-<button class="btn-car">Buy</button>
-<button class="btn-car">Rent</button>
-</div>
-
-</div>
-</section>
-
-
-<!-- REVIEWS -->
-<section class="Review" id="Review">
-
-<h1 class="text-center">Client Reviews</h1>
-
-<div class="row1">
-
-<div class="col1">
-<img src="img/pic-2.png">
-<h3>Abigail Johnson</h3>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-</div>
-
-<div class="col1">
-<img src="img/pic-3.png">
-<h3>Peter Matthews</h3>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-</div>
-
-<div class="col1">
-<img src="img/pic-4.png">
-<h3>Alice Simmons</h3>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-<i class="fa fa-star"></i>
-</div>
-
-</div>
-</section>
-
-
-<!-- CONTACT -->
-<section class="contact" id="Contact">
-
-<h2 class="text-center">Contact Us</h2>
-
-<form class="form">
-
-<input class="form-input" type="text" placeholder="Enter Your Name">
-<input class="form-input" type="text" placeholder="Enter Your Phone">
-<input class="form-input" type="email" placeholder="Enter Your Email">
-
-<textarea class="form-input" rows="5" placeholder="Complaint"></textarea>
-
-<button class="btn btn-dark">Submit</button>
-
-</form>
-
-</section>
-
-
-<!-- FOOTER -->
-<footer class="background">
-
-<p class="text-footer">
-Copyright © 2030 MyCarShowroom | Created by Yashasva
-</p>
-
+<footer>
+    <p>© 2026 DriveEase PRO</p>
 </footer>
 
-<!-- JS -->
-<script src="js/resp.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
-
