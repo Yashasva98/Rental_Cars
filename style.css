@@ -1,311 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
 *{
-	margin: 0;
-	padding: 0;
-	background-sizing:border-box ;
-}
-html{
-	scroll-behavior: smooth;
-}
-.logo{
-	width: 20%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.logo img{
-	width: 20%;
-	border: 3px solid white;
-	border-radius: 50px;
-}
-.navbar{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: sticky;
-	top: 0;
-	cursor: pointer;
-}
-.nav-list{
-    width: 70%;
-    display: flex;
-    align-items: center;
-}
-.nav-list li{
-      list-style: none;
-      padding: 16px 30px;
-}
-.nav-list li a{
-      text-decoration: none;
-      color: white;
-      font-size: 19px;
-      font-family: 'EB Garamond', serif;      
-}
-.nav-list li a:hover{
-      text-decoration: none;
-      color: greyyellow;
-}
-.rightNav{
-	width: 30%;
-	text-align: right;
-	padding: 0 23px;
-}
-#Search{
-	padding: 5px;
-	font-size: 17px;
-	border: 2px solid white;
-	border-radius: 9px;
-}
-.background{
-	background: rgba(0, 0, 0, 0.7) url('../img/car-7.jpg');
-		
-	background-size: cover;
-	background-blend-mode: darken;
-}
-.firstSection{
-	height: 100vh;
-}
-.box-main{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	font-family: 'segoe UI',Tahoma, Geneva, verdana, sans-serif;
-	max-width: 50%;
-	margin: auto;
-	height: 80%;
-}
-.firstHalf{
-	width: 80%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-.secondHalf{
-	width: 30%;
-}
-.secondHalf img{
-	width: 70%;
-	border: 4px solid white;
-	border-radius: 150px;
-	display: block;
-	margin: auto;
-}
-.text-big{
-	font-size: 38px;
-	font-family: 'EB Garamond', serif; 
-      margin: 16px;
-}
-.text-small{
-	font-size: 20;
-	 font-family: 'EB Garamond', serif; 
-}
-.btn{
-	padding: 5px 20px;
-	margin: 20px 120px;
-	border: 2px solid white;
-	border-radius: 8px;
-	font-size: 20px;
-      background: none;
-      color: white;          
-      cursor: pointer;
-      font-family: 'EB Garamond', serif; 
-}
-.btn-sm {
-	padding: 6px 10px;
-	vertical-align: middle;
-	font-size: 16px;
-}
-.btn-dark{
-	color: black;
-	border: 2px solid grey;
-	font-family: 'EB Garamond', serif;
-}
-.secRight{
-	height: 320px;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	max-width: 80%;
-	margin: auto;
-	font-family: 'EB Garamond', serif;
-}
-.secLeft{
-	height: 320px;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	max-width: 80%;
-	margin: auto;
-	flex-direction: row-reverse;
-	font-family: 'EB Garamond', serif;     
-}
-.sectionTag{
-	padding: 16px 0;
-}
-.paras{
-	padding: 0px 30px;
-}
-.thumbnail img{
-	border-radius: 26px;
-     margin-top: 19px;
-}
-.contact{
-	background-color: #f6f5f4;
-	height: 580px;
-}
-.text-center{
-	text-align: center;
-	padding-top: 20px;
-	font-family: 'EB Garamond', serif;
-	font-size: 35px;	
-}
-.form{
-	max-width: 30%;
-	margin: 25px auto;
-}
-.form-input{
-	margin: 14px 0;
-	padding: 5px 3px;
-	width: 100%;
-	font-size: 19px;
-	border: 2px solid grey;
-	border-radius: 6px;
-	font-family: 'EB Garamond', serif;
-}
-.text-footer{
-	text-align: center;
-	padding-top: 30px 0;
-	font-family: 'EB Garamond', serif;
-      display: flex;
-      justify-content: center;
-      color: white;
-}
-.burger{	
-	display: none;
-     position: absolute;
-     cursor: pointer;
-     right: 5%;
-     top: 15px;
-}
-.line{
-	width: 33px;
-	background-color: white;
-	height: 4px;
-	margin: 3px 3px;
-}
-.Review{
-	padding: 40px 10px;
-	background-color: #f6f5f4;
-	color: #434343;
-	text-align: center;
-}
-.inner{
-	max-width: 1200px;
-	margin: auto;
-	overflow:hidden ;
-	padding: 0 20px;
-	font-size: 22px;
-}
-.border{
-	width: 160px;
-	height: 5px;
-	background: #6ab04c;
-	margin: 26px auto;
-}
-.row1{
-	display: flex;
-	flex-wrap: wrap;
-      justify-content: center;
-}
-.col1{
-    flex: 33.33%;
-    max-width: 33.33%;
-    box-sizing: border-box;
-    padding: 15px;
-}
-.Review{
-	background: #fff;
-	padding: 20px;
-}
-.Review img{
-	width: 50%;
-	height: 50%;
-	border-radius: 50%;
-}
-.name{
-	font-size: 20px;
-	text-transform: uppercase;
-	margin: 20px 0;
-}
-.stars{
-	color: #6ab04c;
-	margin-bottom: 20px;
-}
-.Featured{
-	padding: 40px 10px;
-	background-color: #f6f5f4;
-	color: #434343;
-	text-align: center;
-}
-.inner1{
-	max-width: 1200px;
-	margin: auto;
-	overflow:hidden ;
-	padding: 22px 80px;
-	font-size: 16px;
-	display: block;
-}
-.row2{
-	display: flex;
-	flex-wrap: wrap;
-      justify-content: center;
-}
-.col2{
-    flex: 33.33%;
-    max-width: 33.33%;
-    box-sizing: border-box;
-    padding: 15px;
-}
-.Featured{
-	background: #fff;
-	padding: 20px;
-}
-.Featured img{
-	width: 50%;
-	height: 50%;
-	border-radius: 10%;
-}
-.car-name{
-	font-size: 22px;
-	text-transform: uppercase;
-	margin: 20px 0;
-}
-.carprice{
-	font-size: 22px;
-	margin: 20px 0;
-}
-.btn-car{
-	padding: 5px 22px;
-	margin: 7px 3px;
-	border: 2px;
-      border-radius: 12px;
-      color: #fff;
-      cursor: pointer;
-      font-size: 20px;
-      font-family: 'EB Garamond', serif;
-	background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 60%, #77A1D3 100%)
-}
-@media screen and (max-width:960px) {
-.col1{
-	flex:100%;
-	max-width: 80%;
-}	
-}
-@media screen and (max-width:600px) {
-.col1{
-	flex:100%;
-	max-width: 100%;
-}	
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
 }
 
+/* Navbar */
+.navbar{
+    position:fixed;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding:20px 60px;
+    background:black;
+    color:white;
+    z-index:1000;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+}
+
+.navbar li{
+    margin-left:25px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Hero */
+.hero{
+    height:100vh;
+    background:url("https://images.unsplash.com/photo-1503736334956-4c8f8e92946d") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-text h1{
+    font-size:55px;
+}
+
+.btn{
+    margin-top:20px;
+    display:inline-block;
+    padding:12px 30px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Search */
+.search-section{
+    padding:40px;
+    text-align:center;
+}
+
+#searchInput{
+    width:300px;
+    padding:10px;
+}
+
+/* Cars */
+.cars{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    padding:50px;
+}
+
+.car-card{
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    border-radius:10px;
+    overflow:hidden;
+    text-align:center;
+}
+
+.car-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.car-card button{
+    margin:15px;
+    padding:10px 20px;
+    background:black;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+    padding:40px;
+    background:#f2f2f2;
+}
+
+footer{
+    text-align:center;
+    padding:15px;
+    background:black;
+    color:white;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.hero-text h1{
+    font-size:32px;
+}
+
+.navbar{
+    flex-direction:column;
+    text-align:center;
+}
+
+}
